@@ -1,0 +1,31 @@
+name: Developer Request
+description: Make a wish for your devtools
+title: "[DX Request]: "
+labels: ["feature", "flask", "dx"]
+assignees:
+ - ?
+body:
+
+- type: markdown
+   attributes:
+     value: |
+       Thanks for taking the time to fill out this feature request!
+
+- type: input
+   id: contact
+   attributes:
+     label: Contact Details
+     description: How can we get in touch with you if we need more info?
+     placeholder: ex. email@example.com
+   validations:
+     required: false
+
+- type: textarea
+   id: wish
+   attributes:
+     label: What would you like to see in MetaMask Flask?
+     description: Also tell us, how would you use it if it were real?
+     placeholder: Tell us what do you wish
+     value: "I would like to..."
+   validations:
+     required: true
